@@ -11,7 +11,7 @@ user_router = APIRouter()
 repository = Repository()
 
 
-@user_router.post("/users")
+@user_router.post("/users", status_code=201)
 async def add_user(new_user: NewUserRequest) -> dict:
     repository.add_user(new_user)
     return {

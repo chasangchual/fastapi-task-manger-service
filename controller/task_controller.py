@@ -10,7 +10,7 @@ from model.user_model import User
 task_router = APIRouter()
 repository = Repository()
 
-@task_router.post("/tasks")
+@task_router.post("/tasks", status_code=201)
 async def add_task(new_task: NewTaskRequest) -> dict:
     repository.add_task(new_task)
     return {
