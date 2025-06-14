@@ -1,8 +1,8 @@
 import uuid
 from typing import List
 
-from model.user_model import User, NewUserRequest
-from model.task_model import NewTaskRequest, Task
+from models.user_model import User, NewUserRequest
+from models.task_model import NewTaskRequest, Task
 
 class Repository(object):
     users: List[User] = []

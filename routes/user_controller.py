@@ -2,9 +2,9 @@ import uuid
 
 from fastapi import APIRouter, HTTPException, Path
 
-from model.repository import Repository
-from model.task_model import Task
-from model.user_model import User, NewUserRequest
+from models.repository import Repository
+from models.task_model import Task
+from models.user_model import User, NewUserRequest
 
 user_router = APIRouter()
 

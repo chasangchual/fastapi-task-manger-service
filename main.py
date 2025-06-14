@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from controller.task_controller import task_router
-from controller.user_controller import user_router
+from routes.task_controller import task_router
+from routes.user_controller import user_router
 
 app = FastAPI()
 

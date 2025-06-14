@@ -3,9 +3,9 @@ from typing import Any, Coroutine
 
 from fastapi import APIRouter,HTTPException, Path
 
-from model.repository import Repository
-from model.task_model import NewTaskRequest, Task, AssignUserRequest
-from model.user_model import User
+from models.repository import Repository
+from models.task_model import NewTaskRequest, Task, AssignUserRequest
+from models.user_model import User
 
 task_router = APIRouter()
 repository = Repository()
